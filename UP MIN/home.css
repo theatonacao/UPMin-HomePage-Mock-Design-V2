@@ -1,0 +1,455 @@
+		body{
+			padding: 0;
+			margin: 0;
+			font-family: "Century Gothic";
+
+		}
+		/*for panning photos*/
+		.container {
+		  position: relative;
+		  height: 200px;
+		  width: 300px;
+		  overflow: hidden;
+		}
+
+		.item {
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+		}
+
+		.item img {
+		  -webkit-transition: 0.6s ease;
+		  transition: 0.6s ease;
+		}
+
+		.container:hover .item img {
+		  -webkit-transform: scale(1.2);
+		  transform: scale(1.2);
+		}
+/*HEADER CSS*/
+		#horizontal-list {
+				font-family: "Century Gothic";
+				font-size: 11px;
+	   			list-style-type: none;
+	    		margin: 0;
+	    		padding: 0;
+	   			overflow: hidden;
+	    		background-color: rgb(57, 60, 66);
+	    		text-align: center; 
+
+			}
+		.navlist {
+   				float: right;
+			}
+
+		.navlist a {
+    			display:inline-grid;
+    			color: white;
+    			text-align: center;
+    			padding:  15px 20px;
+    			text-decoration: none; 
+			}	
+
+		.navlist a:hover {
+    			background-color: black;
+			}
+			
+		input[type=text] {
+			width: 130px;
+			height: 25px;
+			margin-top: 7px;
+			margin-right: 10px;
+  			box-sizing: border-box;
+  			border: 2px solid #ccc;
+  			border-radius: 4px;
+  			font-size: 16px;
+  			background-color: white;
+  			background-image: url('images/search1.png');
+			background-size: 25px;
+  			background-position: left;
+  			background-repeat: no-repeat;
+  			padding: 12px 20px 12px 40px;
+  			-webkit-transition: width 0.4s ease-in-out;
+  			transition: width 0.4s ease-in-out;
+		}
+
+		input[type=text]:focus {
+				width: 100%;
+		}
+		
+		#HEADER{
+				width: 100%;
+				text-align: center;
+				background-color: rgb(124, 29, 14);
+				margin: 0;
+		    	padding: 0;
+		}
+		#logo{
+				padding: 10px;
+		}
+		#head{
+				border-top: 0.05px solid  gray;
+				font-family: sans-serif; 
+				font-size: 12px;
+		}	
+		.dropbtn {
+			margin: 0;
+		    padding:  10px 40px;
+			color: white;
+			font-family: "Century Gothic";
+			font-size: 16px;
+	   		list-style-type: none;
+	   		overflow: hidden;
+	   		text-align:center; 
+			position: relative; 
+	   		display: inline-block;
+		}
+
+		.dropdown {
+			position: relative;
+			display: inline-block;
+		}
+
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #f1f1f1;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;
+			text-align: left;
+			padding: 0px 5px;
+		}
+
+		.dropdown-content a {
+			color: black;
+  			padding: 12px 16px;
+  			text-decoration: none;
+			display: block;
+		}
+
+		.dropdown-content a:hover {
+			background-color: #ddd;
+		}
+
+		.dropdown:hover .dropdown-content {
+			display: block;
+		}
+		.dropdown-content:hover{
+			display: block;
+		}
+		.dropdown:hover .dropbtn {
+			background-color: white;
+			color: rgb(124, 29, 14);
+		}
+/*END OF HEADER CSS*/
+/*CSS SA SLIDESHOW*/
+		#slideshow{
+			margin: 0;
+			padding: 0;
+			background-blend-mode: overlay;
+			box-sizing:border-box;}
+
+		/* Slideshow container */
+		.slideshow-container {
+		  width: 70%;
+		  position: relative;
+		  margin: auto;
+		}
+		/* Hide the images by default */
+		.mySlides {
+		  display: none;
+
+		}
+
+		/* Caption text */
+		.text {
+		  font-family: "Century Gothic";
+		  color: white;
+		  font-size: 30px;
+		  padding: 60px 20px;
+		  margin:  20px 60px;
+		 
+		  position: absolute;
+		  bottom: 15px;
+		/*  width: 100%;*/
+		  text-shadow: 2px 2px 4px #000000;
+		  text-align: center;
+		}
+		#thedots{
+			position: absolute; 
+		    top: 80%; 
+		    right: 48%;
+		    z-index: 99;
+		}
+		/* The dots/bullets/indicators */
+		.dot {
+		  cursor: pointer;
+		  height: 15px;
+		  width: 15px;
+		  margin: 0 2px;
+		  border: 2px solid white;
+		  border-radius: 60%;
+		  display: inline-block;
+		  transition: background-color 0.6s ease;
+		}
+
+		.active{
+		  background-color: rgb(124, 29, 14);
+		  border: 2px solid rgb(124, 29, 14);
+		}
+		.dot:hover {
+		 	background-color: white;
+		 	border: 2px solid white;
+
+		 }
+
+		/* Fading animation */
+		.fade {
+		  -webkit-animation-name: fade;
+		  -webkit-animation-duration: 1.5s;
+		  animation-name: fade;
+		  animation-duration: 1.5s;
+		}
+
+		@-webkit-keyframes fade {
+		  from {opacity: .4} 
+		  to {opacity: 1}
+		}
+
+		@keyframes fade {
+		  from {opacity: .4} 
+		  to {opacity: 1}
+		}
+/*END OF CSS SA SLIDESHOW*/
+/*CSS SA UPDATES*/
+		.updates{
+			background-color: #e1e4ea;
+			padding: 40px 100px;
+			margin: 0;
+			font-family: "Century Gothic";
+			color: rgb(57, 60, 66);
+		}
+		.updates img{
+			margin: 0;
+			height: 200px;
+		 	width: 300px;
+			padding: 0;
+		}
+		.title{
+			font-size: 30px;
+		}
+		.cap{
+			font-size: 16px;
+		}
+		.updates a:hover, .cap:hover{
+			color:rgb(124, 29, 14); 
+		}
+		.updates a{
+			text-decoration: none;
+			color: rgb(57, 60, 66);
+		}
+		.updates tr{
+			padding: 0;
+		}
+/*END OF CSS SA UPDATES*/
+/*CSS SA EXPLORE*/
+		.explore{
+			padding: 50px 100px;
+			background-color:  rgb(57, 60, 66);
+		}
+		.explore p{
+			line-height: 2;
+			margin-top:0;
+			margin-left: 40px;
+			font-size: 16px;
+			color: white;
+		}
+		.explore a{
+			text-decoration: none ;
+			color:white;
+			padding: 9px;
+		}
+		.explore a:hover{
+			border: 1px solid white;
+			padding: 9px;
+		}
+/*END OF CSS EXPLORE*/
+
+
+/*CSS SA EVENTS INSERT HERE*/
+	.events{
+		padding:30px 100px;
+		background-color: white;
+	}
+	.events a:hover{
+		color: red;
+		cursor: pointer;
+	}
+	#events{
+		color: rgb(124, 29, 14);
+		font-size: 40px;
+		text-align: center;
+	}
+	.events table{
+		width: 100%;
+	}
+	.dates{
+		padding-left: 80px;
+		width: 200px;
+		padding-bottom: 0;
+		height: 90px;
+	}
+	.dates h2 {
+		color: black;
+		border: 2px solid gray;
+		padding:35px 15px;
+		width: 100px;
+		border-radius: 350px;
+		text-align: center;
+		text-shadow: 1px 1px 2px #999999;
+	}
+	.eventnames{
+		text-align: center;
+		color: rgb(124, 29, 14);
+		padding: 0;
+		font-size: 16px;
+	}
+	.eventnames a{
+		text-decoration: none;
+		color: rgb(124, 29, 14);
+	}
+	.eventnames tr{
+		padding: 120px;
+	}
+	.eventnames a:hover{
+		color: red;
+	}
+/*END OF EVENTS CSS*/
+
+/*CSS SA SOCIALMEDIA*/
+	.social{
+		padding: 30px 100px;
+		background-color: rgb(124, 29, 14);
+	}
+	.social table{
+		text-align: center;
+		margin-left: 25%;
+	}
+	#social{
+		color: white;
+		font-size: 40px;
+		text-align: center;
+	}
+	.table2 table{
+		margin-left: 13%;
+	}
+	.table2 td{
+		padding: 10px;
+	}
+	.container2 {
+		  position: relative;
+		  height: 200px;
+		  width: 200px;
+		  overflow: hidden;
+	}
+
+	.item2 {
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+	}
+
+	.item2 img {
+		height: 200px;
+		width: 200px;
+		-webkit-transition: 0.6s ease;
+		 transition: 0.6s ease;
+	}
+
+	.container2:hover .item2 img {
+		  -webkit-transform: scale(1.2);
+		  transform: scale(1.2);
+	}	
+/*END OF SOCIAL MEDIA CSS*/
+/*SEALS CSS*/
+	.seals{
+		margin-left: 8%;
+	}
+	.seals img{
+		width: 400px;
+	}
+
+/*END OF SEALS CSS*/
+/*FOOOTER CSS*/
+		.footermenu a{
+				text-decoration: none;
+				color:gray;
+		}
+
+		.footermenu a:hover{
+				color: white;
+		}
+
+		#footer {
+			    position: relative;
+			    left: 0px;
+			    bottom: 0px;
+			    width: 100%;
+			    margin-top: 40px;
+			    margin-bottom: none;
+			    padding-left: 0;
+			    background-color:rgb(57, 60, 66);
+		}
+		.footer table{
+				font-size: 12px;
+				padding: 30px 200px 0px 70px;
+				font-family: "Century Gothic";
+				color: white;
+				text-align: right;
+				margin:0px;
+		}
+		.footer a:hover{
+			text-decoration: underline;
+
+		}
+		.footer a{
+			padding-bottom:  40px;
+			text-decoration: none;
+			color: inherit;
+		}
+		.row1{
+			border-right: 0.05em solid white;
+			padding-right: 20px;
+			width: 20%;
+		}
+		.row2{
+			border-left: 0.05em solid white;
+			padding-left: 20px;
+			width: 20%;
+			text-align: left;
+		}
+		.row{
+			width: 30%;
+		}
+		.footertable {
+				font-size: 15px;
+				color: gray;
+				font-family: "Century Gothic";
+				text-align: center;
+				padding-bottom: 0px;
+				padding-left: 0px;
+				width: 100%;
+		}
+		.sns{
+			text-align: center; 
+			padding-left: 110px;
+			
+		}
+		.sns a:hover{
+			text-decoration: none;
+			cursor: pointer;
+		}
+		
+/*END OF  CSS FOOTER*/
